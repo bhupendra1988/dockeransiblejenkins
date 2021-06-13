@@ -1,7 +1,6 @@
 <html>
-<body style="background-color:powderblue;">
-<h2 stype="colour: red">Deployed using Jenkins, Ansible!! -2</h2>
-<h2 stype="colour: red">Akshara Pandey and Kittu Pandey</h2>
-  <h2> Titu colony, Faridabad</h2>
+<body>
+<h2 style="background-color:powderblue;">Deployed using Jenkins, Ansible!! -2</h2>
+<p style="background-color:tomato;">This is a paragraph.</p>
 </body>
 </html>

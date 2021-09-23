@@ -4,7 +4,7 @@
   tasks:
     - name: Install python pip
       yum:
-        name: python-pip
+        name: python #python-pip
         state: present
     - name: Install docker
       yum:
@@ -15,10 +15,10 @@
         name: docker
         state: started
         enabled: yes
-    - name: Install docker-py python module
-      pip:
-        name: docker-py
-        state: present
+#    - name: Install docker-py python module
+#      pip:
+#        name: docker-py
+#        state: present
     - name: Start the container
       docker_container:
         name: hariapp

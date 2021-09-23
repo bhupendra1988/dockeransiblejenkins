@@ -37,6 +37,8 @@ pipeline{
         
         stage('Docker Deploy'){
             steps{
+                sh "su - bpandey"
+                sh "cd /var/lib/jenkins/workspace/dockerhub-ansible-jenkins"
                 sh "ansible-playbook deploy-docker.yml -i dev.inv"
      //         ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e DOCKER_TAG=${DOCKER_TAG}", installation: 'ansible', inventory: 'dev.inv', playbook: 'deploy-docker.yml'
             }
